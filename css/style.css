@@ -50,4 +50,24 @@ select {
     outline: none;
 }
 
+/* CSS VARIABLES */
+
+:root {
+  --background-black: #0f0f11;
+  --surface: #1a1a1d;
+
+  --neon-purple: #a271f8;
+  --neon-pink: #f72585;
+  --neon-blue: #4895ef;
+  --neon-green: #00f5d4;
+  --neon-yellow: #ffd166;
+
+  --text-primary: #ffffff;
+  --text-secondary: #cfd2dc;
+
+  --border: #2c2c31;
+  --shadow: rgba(0, 255, 255, 0.2);
+  
+   --gradient: linear-gradient(135deg, var(--neon-purple), var(--neon-pink), var(--neon-blue)); 
+}
 
