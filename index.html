@@ -3,9 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mikely Barboza - Portfolio</title>
+    <title>Mikely Barboza - Portifolio</title>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">LOGO</a>
+            <div class="menu">
+                <ul class="list">
+                    <li><a class="list-link active" href="#home">Home</a></li>
+                    <li><a class="list-link" href="#about">About</a></li>
+                    <li><a class="list-link" href="#portfolio">Portfolio</a></li>
+                </ul>
+            </div>
+            <button class="button-contact">Contact</button>
+        </nav>
+    </header>
+
+    <main class="content">
+        <section id="home">
+          <h1>Mikely Barboza</h1>
+          
+          <h2>SOFTWARE ENGINEER | FRONTEND DEVELOPER</h2>
+          
+          <p>Com experiência sólida do ... </p>
+          
+          <button class="btn">Saiba Mais</button>
+          
+          <a href="curruculo" target="_blank" class="cv-button">CV</a>
+
+        </section>
+        <br>
+        <section id="about">
+            <h1>Sobre Mim</h1>
+            <br>
+            <p>Olá! Me chamo Mikely, sou formada em <strong>Análise e Desenvolvimento de Sistemas</strong> e pós graduada em <strong>Engenharia de Software</strong>.</p>
+            <p>Tenho foco em <strong>desenvolvimento frontend com Vue.js e TypeScript</strong>, além de atuar no <strong>backend com Python e Django</strong>. me dedico a criar <strong>interfaces funcionais e bem pensadas</strong>, unindo <strong>UI/UX</strong> com <strong>Figma</strong> para prototipagem e design.</p>
+            <p>Estou sempre em evolução, estudando e me aperfeiçoando para construir soluções modernas, eficientes e visualmente atrativas.</p>
+        </section>
+        <br>
+        <section id="portfolio">
+            <h1>Portfólio</h1>
+            <br>
+            <div class="project">
+                <h2>1 - Sistema de Gestão para pequenos Negócios</h2>
+                    <p><strong>Stack:</strong> Vue.js + Django + TypeScript + Figma</p>
+                        <ol>
+                            <li>Tela de login, dashboard, CRUD de produtos/clientes</li>
+                            <li> Visual cleancom UI/Ux pensado em acessibilidade e facilidade de uso</li>
+                            <li>Protótipo no Figma + link para demosntração ou vídeo</li>
+                        </ol>
+            </div>
+            <br>
+            <div class="project">
+                <h2>2 - Aplicativo PWA de tarefas com Timer Pomodoro</h2>
+                <p><strong>Stack:</strong> Vue.js (com PWA) + TypeScript + Figma</p>
+                <ol>
+                    <li>Interface responsiva com modo escuro</li>
+                    <li>Funcionalidade de tarefas, categorias e timer</li>
+                    <li>Design prototipado no Figma</li>
+                    <li>Ideal para mostrar fluência em frontEnd Ux</li>
+                </ol>
+            </div>
+            <br>
+            <div class="project">
+                <h2>3 - Blog com backend em Django + Frontend em Vue</h2>
+                <p><strong>Stack:</strong> Django + Vue.js + TypeScript</p>
+                <ol>
+                    <li>Sistema de autenticação (login, Cadastro...)</li>
+                    <li>Admin para criar/editar postagens</li>
+                    <li>Frontend estilizado com animações suaves</li>
+                    <li>API RESTfull conectando Vue e Django</li>
+                </ol>
+            </div>
+            
+        </section>
+    </main>
+    <script src="/js/script.js"></script>
 </body>
 </html>

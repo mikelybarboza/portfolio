@@ -71,3 +71,228 @@ select {
    --gradient: linear-gradient(135deg, var(--neon-purple), var(--neon-pink), var(--neon-blue)); 
 }
 
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--surface);
+    padding: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.navbar a {
+    color: var(--text-primary);
+}
+
+.logo {
+    margin-right: 5rem;
+}
+
+.list {
+    display: flex;
+    gap: 2.5rem;
+}
+
+.list-link {
+    position: relative;
+    color: var(--text-primary);
+    font-size: 1.6rem;
+    padding-bottom: 5px;
+    transition: color 0.3s ease;
+}
+
+.list-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0%;
+    color: var(--neon-pink);
+    background: var(--gradient);
+    transition: width 0.4s ease-in-out;
+}
+
+.list-link.active {
+    color: var(--neon-pink);
+}
+
+.list-link.active::after {
+    width: 100%;
+    
+}
+
+
+.button-contact {
+    position: relative;
+    padding: 1.2rem 2.4rem;
+    color: var(--text-primary);
+    background: var(--border);
+    border: none;
+    border-radius: 1.5rem;
+    font-size: 1.6rem;
+    cursor: pointer;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.button-contact::before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    background: var(--gradient);
+    border-radius: 2rem;
+    animation: none;
+    transition: all 0.3s ease;
+    z-index: -2;
+    filter: blur(10px);
+    transition: tranform 0.3s ease;
+}
+.button-contact:hover {
+    color: var(--neon-pink);
+    transform: scale(1.09);
+    transition: ease;
+}
+
+.button-contact:hover::before{
+    animation: spin 2s linear infinite;
+}
+
+.button-contact::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+  background: var(--border);
+  border-radius: 1.3rem;
+  z-index: -1;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg);}
+    100% { transform: rotate(360deg);}
+}
+
+
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    padding: 0 4rem;
+    background-color: var(--background-black);
+    color: var(--text-primary);
+}
+
+#home h1 {
+    font-size: 6rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+#home h2 {
+    font-size: 2rem;
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+}
+
+#home p {
+    font-size: 1.6rem;
+    color: var(--text-secondary);
+    max-width: 600px;
+    margin-bottom: 3rem;
+}
+
+#home .btn {
+    display: inline-block;
+    margin: 1rem;
+    text-align: center;
+    padding: 1.5rem 5rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 2rem;
+    color: var(--text-primary);
+    background: var(--gradient);
+    box-shadow: 0 0 15px var(--shadow);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+#home .btn:hover {
+    transform: scale(1.05);
+    color: var(--surface);
+    font-weight: bold;
+}
+
+.cv-button {
+  position: fixed;
+  bottom: 2rem;
+  left: 2rem;
+  padding: 1rem 2rem;
+  border-radius: 2rem 2rem 0 2rem;
+  border: none;
+  font-size: 1.4rem;
+  font-weight: 600;
+  background: var(--border);
+  color: var(--text-primary);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  z-index: 999;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.cv-button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+.cv-button::before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    background: var(--gradient);
+    border-radius: 2rem 2rem 0 2rem;
+    animation: none;
+    transition: all 0.3s ease;
+    z-index: -2;
+    filter: blur(10px);
+    transition: tranform 0.3s ease;
+}
+.cv-button:hover {
+    color: var(--neon-pink);
+    transform: scale(1.09);
+    transition: ease;
+}
+
+.cv-button:hover::before{
+    animation: spin 2s linear infinite;
+}
+
+.cv-button::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+  background: var(--border);
+  border-radius: 2rem 2rem 0 2rem;
+  z-index: -1;
+}
